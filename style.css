@@ -1,0 +1,80 @@
+body{
+	background-color: #f3f0e8;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+h1 a {
+    text-decoration: none; 
+    color: inherit;       
+}
+
+
+.album-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 40px;
+    align-items: center;
+    
+}
+
+
+.album-list::-webkit-scrollbar {
+    height: 6px; 
+}
+
+
+.album-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05); 
+    border-radius: 10px;
+}
+
+.album-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);   
+    border-radius: 10px;
+}
+
+
+.album-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);    
+}
+
+
+.album-list img {
+    height: 76vh;              
+    width: auto;              
+    flex-shrink: 0;            
+    object-fit: contain;       
+    border-radius: 10px;       
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.album-list img:hover {
+    transform: translateY(-20px); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4); 
+    cursor: pointer;           
+}
+
+.left, .right {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    text-decoration: none; 
+    color: black;          
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}

@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#fffbf3;
+    min-height:100vh;
+}
+
+.title{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:140px;
+}
+
+.title h1{
+    font-size:32px;
+    font-weight:normal;
+}
+
+
+
+.timeline{
+    display:flex;
+    justify-content:center;
+    gap:120px;
+}
+
+
+
+.year{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.artist{
+    display:flex;
+    align-items:flex-end;
+    gap:18px;
+    height:170px;
+    margin-bottom:40px;
+}
+
+.artist p{
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    font-size:18px;
+    margin:0;
+}
+
+.year-link{
+    position:relative;
+    text-decoration:none;
+    color:black;
+}
+
+.year-link h2{
+    position:relative;
+    z-index:2;
+    font-size:90px;
+    font-weight:normal;
+}
+
+.highlight{
+    position:absolute;
+    left:0;
+    bottom:15px;
+    width:100%;
+    height:26px;
+    background-color:#fceba2;
+    z-index:1;
+    transition:0.3s;
+}
+
+.year-link:hover .highlight{
+    transform:translateY(-10px);
+}
+
+
+.line-box{
+    margin-top:20px;
+    width:100%;
+    text-align:center;
+}
+
+.line-box p{
+    font-size:28px;
+}
