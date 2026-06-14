@@ -1,0 +1,97 @@
+body {
+  background-color: #f5f0e8;
+  font-size: 14px;
+  color: #222;
+  margin: 40px 60px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+ 
+a { color: #222; text-decoration: none; }
+ 
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+ 
+h2 + p { margin: 0; font-size: 14px; color: #444; }
+ 
+.year {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #444;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 16px;
+  width: 500px;
+}
+ 
+.section-title { font-weight: bold; margin-bottom: 4px; width: 500px; }
+ 
+.section-text { line-height: 2; margin-bottom: 20px; width: 500px; }
+ 
+.ablum { border-top: 1px solid #aaa; padding-top: 20px; width: 500px; }
+ 
+.music {
+  border-top: 1px solid #aaa;
+  padding-top: 16px;
+  width: 500px;
+  position: absolute;
+  bottom: 240px;
+}
+ 
+.music p { margin: 0; }
+ 
+.music a { 
+    color: #222; 
+    text-decoration: none; 
+    font-size: 20px; 
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;  
+}
+
+.music a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.book {
+  float: right;
+  width: 450px;
+  height: 450px;
+  perspective: 1500px;
+  margin-top: -400px;
+  margin-right: 60px;
+  position: relative;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+ 
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: left center;
+  transition: 1.5s ease;
+  background: white;
+  border-left: 1px solid #ddd;
+}
+ 
+
+.page1 { z-index: 5; }
+.page2 { z-index: 4; }
+.page3 { z-index: 3; }
+.page4 { z-index: 2; }
+.page5 { z-index: 1; }
+ 
+
+.book:hover .page1 { transform: rotateY(-160deg); transition-delay: 0s; }
+.book:hover .page2 { transform: rotateY(-160deg); transition-delay: 1.8s; }
+.book:hover .page3 { transform: rotateY(-160deg); transition-delay: 3.6s; }
+.book:hover .page4 { transform: rotateY(-160deg); transition-delay: 5.4s; }
+ 
